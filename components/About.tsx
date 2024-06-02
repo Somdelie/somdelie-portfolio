@@ -3,8 +3,8 @@ import Avatar from "@mui/material/Avatar";
 
 const About = () => {
   return (
-    <section id="about" className="py-8">
-      <h1 className="text-2xl font-bold text-center mb-8">
+    <section id="about" className="py-24">
+      <h1 className="text-lg font-bold mb-8">
         <span className="text-orange-500">About</span> me!
       </h1>
       <div className="grid md:grid-cols-3 gap-4">
@@ -26,7 +26,7 @@ const About = () => {
             </button>
           </div>
         </div>
-        <div className="bg-white p-4 h-full col-span-2 shadow w-full">
+        <div className="bg-sky-500 p-4 h-full col-span-2 shadow w-full">
           <h4 className="font-semibold underline">
             HELLO IT'S Cautious Full Stack Developer
           </h4>

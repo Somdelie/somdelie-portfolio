@@ -6,8 +6,8 @@ import Image from "next/image";
 const Experience = () => {
   return (
     <div className="py-20 w-full">
-      <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+      <h1 className="text-lg font-semibold">
+        My <span className="text-orange-500">work experience</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-2 grid-cols-1 gap-4">

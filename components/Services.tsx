@@ -3,9 +3,9 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section id="services" className="py-8">
+    <section id="services" className="py-24">
       <div className="container mx-auto">
-        <h1 className="text-2xl font-bold text-center mb-8">
+        <h1 className="text-2xl font-bold mb-8">
           My <span className="text-orange-500">Services</span>
         </h1>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

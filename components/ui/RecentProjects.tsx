@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const RecentProjects = () => {
   return (
-    <section id="projects" className="py-10">
+    <section id="projects" className="py-24">
       <h1 className="text-xl font-semibold">
         A small selection of{" "}
         <span className="text-orange-500">recent projects</span>

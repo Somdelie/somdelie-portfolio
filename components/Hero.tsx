@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { FaLocationArrow } from "react-icons/fa6";
+import { BiDownload } from "react-icons/bi";
 
 const Hero = () => {
+  const whatsappNumber = 27727077541; // Your phone number in international format without the '+' sign
+  const defaultMessage = "Hello, I would like to get in touch with you."; // Customize your default message
+
   return (
     <div className="flex items-center py-6">
       <div className="flex-1">
@@ -20,12 +23,25 @@ const Hero = () => {
           Africa.
         </p>
 
-        <a href="#about">
-          <button className="button flex items-center">
-            Show my work <FaLocationArrow />
-          </button>
-        </a>
-        {/* <Button /> */}
+        <div className="flex flex-col sm:flex-row items-center gap-3">
+          <a href="/cautious-cv.pdf" download>
+            <button className="button flex items-center">
+              Get My Cv <BiDownload size={24} className="ml-2" />
+            </button>
+          </a>
+
+          <a
+            href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(
+              defaultMessage
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button1">
+              <span> Contact Me </span>
+            </button>
+          </a>
+        </div>
       </div>
       <div className="mt-6">
         <div className="md:w-[300px] w-[100px] p-4 relative rounded-t-full bg-orange-600 h-[100px] md:h-[305px]">

@@ -1,13 +1,24 @@
 import { navItems } from "@/data";
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
-    <div className="bg-white/80 mt-4 flex items-center justify-center gap-24 sticky z-50 top-4 py-2 max-w-[80%] mx-auto px-4 rounded-full shadow">
-      Navbar
-      <div className="flex items-center gap-2">
+    <div className="bg-white/80 mt-4 h-[50px] flex items-center justify-center gap-24 sticky z-50 top-4 py-2 max-w-[80%] mx-auto px-4 rounded-full shadow">
+      <div className="w-[100px] h-full">
+        <Image
+          src="/somdelie-dev.png"
+          alt="Somdelie"
+          width={100}
+          height={100}
+          className="object-cover object-center "
+        />
+      </div>
+      <MobileNav />
+      <div className=" hidden md:flex items-center gap-2">
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
