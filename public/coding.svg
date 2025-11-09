@@ -1,0 +1,61 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="180" fill="#ff6b35" opacity="0.1"/>
+  
+  <!-- Monitor/Screen -->
+  <rect x="80" y="120" width="240" height="160" rx="8" fill="#1a1a1a" stroke="#ff6b35" stroke-width="3"/>
+  <rect x="90" y="130" width="220" height="130" rx="4" fill="#0a0a0a"/>
+  
+  <!-- Code Lines -->
+  <line x1="110" y1="150" x2="180" y2="150" stroke="#ff6b35" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="170" x2="220" y2="170" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="110" y1="190" x2="160" y2="190" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <line x1="130" y1="210" x2="240" y2="210" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="130" y1="230" x2="200" y2="230" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  
+  <!-- Cursor -->
+  <rect x="245" y="205" width="3" height="20" fill="#ff6b35">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Bracket Symbols -->
+  <path d="M 250 140 L 240 145 L 240 175 L 250 180" stroke="#ff6b35" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 280 140 L 290 145 L 290 175 L 280 180" stroke="#ff6b35" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Monitor Stand -->
+  <rect x="180" y="280" width="40" height="30" fill="#1a1a1a"/>
+  <rect x="140" y="310" width="120" height="8" rx="4" fill="#1a1a1a"/>
+  
+  <!-- Floating Code Symbols -->
+  <g opacity="0.4">
+    <!-- Left side symbols -->
+    <text x="40" y="160" font-family="monospace" font-size="24" fill="#ff6b35">&lt;/&gt;</text>
+    <text x="30" y="220" font-family="monospace" font-size="20" fill="#ff6b35">{}</text>
+    <text x="50" y="280" font-family="monospace" font-size="18" fill="#ff6b35">[]</text>
+    
+    <!-- Right side symbols -->
+    <text x="340" y="160" font-family="monospace" font-size="24" fill="#ff6b35">( )</text>
+    <text x="350" y="220" font-family="monospace" font-size="20" fill="#ff6b35">;</text>
+    <text x="340" y="280" font-family="monospace" font-size="22" fill="#ff6b35">=&gt;</text>
+  </g>
+  
+  <!-- Decorative Dots -->
+  <circle cx="60" cy="100" r="4" fill="#ff6b35" opacity="0.3"/>
+  <circle cx="340" cy="100" r="4" fill="#ff6b35" opacity="0.3"/>
+  <circle cx="60" cy="320" r="4" fill="#ff6b35" opacity="0.3"/>
+  <circle cx="340" cy="320" r="4" fill="#ff6b35" opacity="0.3"/>
+  
+  <!-- Animated Particles -->
+  <circle cx="100" cy="80" r="2" fill="#ff6b35" opacity="0.6">
+    <animate attributeName="cy" values="80;60;80" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="90" r="2" fill="#ff6b35" opacity="0.6">
+    <animate attributeName="cy" values="90;70;90" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="340" r="2" fill="#ff6b35" opacity="0.6">
+    <animate attributeName="cy" values="340;360;340" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="330" r="2" fill="#ff6b35" opacity="0.6">
+    <animate attributeName="cy" values="330;350;330" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
